@@ -3,7 +3,7 @@
 * Plugin Name: Chat Rooms powered by Firebase
 * Plugin URI: http://www.roysivan.com
 * Description: Using Firebase to create chat rooms 
-* Version: 0.1
+* Version: 1.0.0
 * Author: Roy Sivan
 * Author URI: http://www.roysivan.com
 * Text Domain: firechatroom
