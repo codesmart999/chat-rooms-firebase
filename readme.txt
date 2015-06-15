@@ -1,10 +1,10 @@
 === Plugin Name ===
-Contributors: guavaworks
+Contributors: guavaworks, elvismdev
 Donate link: http://www.codecavalry.com/royboy789
 Tags: angularjs, client side, single page application, chat, chat room, chatroom, firebase
 Requires at least: 3.9
 Tested up to: 4.1.1
-Stable tag: 1.1
+Stable tag: 1.1.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
