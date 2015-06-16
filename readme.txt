@@ -8,7 +8,7 @@ Stable tag: 2.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Use the Chat Rooms plugin to have chat rooms added to your site, powered by [Firebase](https://www.firebase.com).
+Use the Chat Rooms plugin to have chat rooms added to your site, powered by Firebase and AngularJS.
 
 == Description ==
 
