@@ -1,31 +1,29 @@
 <?php
 
 class chatroom_shortcode {
-	
+
 	function __init() {
-		
 		add_shortcode( 'ng-chatroom', array( $this, 'do_chat_room' ) );
-		
 	}
-	
+
 	function do_chat_room( $atts ) {
-		$a = shortcode_atts( array(
-			'id' => ''
-			), $atts );
-		
-		ob_start();
-		if($a['id'] == ''){
-			echo '<p>post_id must be set in shortcode to display chat room</p>';
-			
-		} else {
-			$content = '<h2>Testing: '.$a['id'].'</h2>';
-			$content = '<div ng-app="chat_app" ng-controller="chat_controller" ng-init="startChat('.$a['id'].')">';
-				$content .= file_get_contents( CHATROOM_PLUGIN_PATH.'inc/chatroom.tpl.html' );	
-			$content .= '</div>';
-			echo $content;
+		$args = shortcode_atts(
+			array(
+				'id' => '',
+			),
+			$atts
+		);
+
+		fire_chat()->load_scripts();
+
+		$template = new _chatroom_tpl;
+
+		if ( '' === $args['id'] ) {
+			return '<p>post_id must be set in shortcode to display chat room</p>';
 		}
-		return ob_get_clean();
+		$content  = '<div ng-app="chat_app" ng-controller="chat_controller" ng-init="startChat(' . absint( $args['id'] ) . ')">';
+		$content .= $template->get_template();
+		$content .= '</div>';
+		return $content;
 	}
 }
-
-?>
