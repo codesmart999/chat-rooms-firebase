@@ -14,8 +14,8 @@ Use the Chat Rooms plugin to have chat rooms added to your site, powered by [Fir
 
 Powered by the [AngularJS for WP](https://wordpress.org/plugins/angularjs-for-wp/) plugin and [Firebase](https://www.firebase.com), add real time communication to your site, for free. Create a new chat room (custom post type) and off you go!
 
-*Fully CSS customizable
-*Template powered - just copy the template file in the template directory into your theme - firebase-chat/chatroom.php and override as you need.
+* Fully CSS customizable  
+* Template powered - just copy the template file in the template directory into your theme - firebase-chat/chatroom.php and override as you need.
 
 
 == Installation ==
