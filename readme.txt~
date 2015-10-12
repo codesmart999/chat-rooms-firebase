@@ -15,7 +15,10 @@ Powered by the [AngularJS for WP](https://wordpress.org/plugins/angularjs-for-wp
 * Fully CSS customizable  
 * Template powered - just copy the template file in the template directory into your theme - firebase-chat/chatroom.php and override as you need.
 
+== Frequently Asked Questions ==
+
 = Why use AngularJS? =
 
 AngularJS renders your posts client-side. WordPress is built on PHP, so every page a user visits is converted to HTML on the server, then served to the client. With ANgularJS you are only getting a JSON Object (text) from the server
 then renderring that to HTML using the client's machine. This will speed up your pages as well as allow for more concurrent visitors to your site as the strain on the server is reduced.
+
